@@ -17,6 +17,7 @@
     "protractor": "^3.2.2"
   },
   "scripts": {
+    "bower": "bower",
     "postinstall": "bower install",
 
     "prestart": "npm install",
