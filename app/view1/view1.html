@@ -1,1 +1,88 @@
-<p>This is the partial for view 1.</p>
+<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      #map {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      ::-webkit-scrollbar {
+              width: 12px;
+      }
+       
+      ::-webkit-scrollbar-track {
+              -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                      border-radius: 10px;
+      }
+       
+      ::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+                      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      }
+      #map-container .collection{
+          margin: 0;
+      }
+      .user-groups-category{
+           width: 80%;
+           height: 100%;
+           float: left;
+           background: white;
+           text-align: center;
+      }
+      .user-groups-change{
+           float: left;
+           width: 20%;
+           height:100%;
+           background: red;
+      }
+</style>
+
+<div id="map-container" style="height:100%; width:100%; display:block; position: relative;" >
+    <div style="position: absolute;height:100%; width: 100%;">
+        <div id="map" map></div>
+    </div>
+    <div style="top:0%; width:408px; height:95%; display: block; position: absolute;" ng-show="$state.includes('view1.leftMenu')">
+        <div style="height:100%;">
+            <a style="position:absolute;right:0px;" ui-sref="view1" href="">[x] Close</a>
+            <div style="height:100%;">
+                <div style="width:50%;height:30%;background-color:green;float:left;">Image Container</div>
+                <div style="width:50%;height:30%;background-color:yellow;float:left;">Details</div>
+                <div style="width:100%;height:10%;float:left;  background-color: white; ">
+                   <div class="user-groups-category" ng-show="change"> <div>Groups: Not part of</div>  </div>
+                   <div class="user-groups-change" ng-show="change" ng-click="changeListing()" ></div>
+                   <div class="user-groups-change" ng-show="!change" ng-click="changeListing()" ></div>
+                   <div class="user-groups-category" ng-show="!change">Groups: Part of</div>
+                </div>
+                <div style="width: 100%; height:60%;float:left; overflow:auto;">
+                    <!-- 
+                        <div style="overflow:auto;">
+                     -->
+                        <ul class="collection" >
+                            <li ng-repeat="group in groups" class="collection-item avatar">
+                              <!-- 
+                                  <i class="material-icons circle">folder</i>
+                               -->
+                              <img src="{{group.imageUrl}}" alt="" class="circle">
+                               
+                              <span class="title">{{group.name}}</span>
+                              <p>First Line <br>
+                                 Second Line
+                              </p>
+                              <a href="" class="secondary-content" ng-click="addUser(group.groupid)"><i class="material-icons">add</i></a>
+                            </li>
+                        </ul>
+                    <!-- 
+                        </div>
+                     -->
+                </div>
+            </div>    
+            <div style="height:100%;">
+            </div>
+        </div>
+    </div>
+</div>
