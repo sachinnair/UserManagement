@@ -1,3 +1,8 @@
+#Background:
+I was assigned a task to develop a User and Group Management tool. There weren't any guidelines and restrictions associated to this task and could be developed as per developer's will. I wanted to showcase my creativity which is my USP and thus an application of this nature was developed. 
+
+My focus as always was to develop a data-driven, functional application within a deadline of 4 hrs so the code has its share of flaws but they exists intentionally to meet this deadline. Given an opportunity to walk-through my code I could point them out and also describe future developments for this tool.  
+
 #Instructions:
 
 After pulling code from github execute following commands: 
@@ -12,5 +17,5 @@ After pulling code from github execute following commands:
 4. Clicking on 'add' seen in listing under 'Groups: Not part of', adds the group to user's list and which can be seen on 'Groups: Part of'
 
 ## Link
-[http://usermanagement.techm.co.in/](http://usermanagement.techm.co.in/)
+[http://dashboard.sociobeing.com/](http://dashboard.sociobeing.com/)
 
