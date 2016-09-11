@@ -1,7 +1,7 @@
 #Background:
 I was assigned a task to develop a User and Group Management tool. There weren't any guidelines and restrictions associated to this task and could be developed as per developer's will. I wanted to showcase my creativity which is my USP and thus an application of this nature was developed. 
 
-My focus as always was to develop a data-driven, functional application within a deadline of 4 hrs so the code has its share of flaws but they exists intentionally to meet this deadline. Given an opportunity to walk-through my code I could point them out and also describe future developments for this tool.  
+My focus as always was to develop a data-driven, functional application. Since there was a deadline of 4 hrs, the code has its share of flaws but they exists intentionally to meet this deadline. Given an opportunity to walk-through my code I could point them out and also describe future developments for this tool.  
 
 #Instructions:
 
