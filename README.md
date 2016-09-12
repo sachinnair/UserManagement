@@ -19,3 +19,6 @@ After pulling code from github execute following commands:
 ## Link
 [http://dashboard.sociobeing.com/](http://dashboard.sociobeing.com/)
 
+
+###Afterthought:
+> Map based tool could be created to track market reach through media campaigns. It would be catchy and helpful in pitching business to customers.
